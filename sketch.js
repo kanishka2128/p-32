@@ -32,7 +32,6 @@ function draw(){
 
     // write code to display time in correct format here
     text ("time : " + hour )
-    console.log(hour)
 }
 
 async function getBackgroundImg(){
@@ -51,35 +50,33 @@ async function getBackgroundImg(){
     // add conditions to change the background images from sunrise to sunset
    if (hour >= 04 && hour <= 06) {
        bg = "sunrise1.png"
-   }
-   elseif (hour >= 06 && hour <= 08 ) {
+   }else if (hour >= 06 && hour <= 08 ) {
        bg = "sunrise2.png"
-   }
-   elseif (hour >= 08 && hour <= 10 ) {
+   }else if (hour >= 08 && hour <= 10 ) {
     bg = "sunrise3.png"
     }
-    elseif (hour >= 10 && hour <= 12 ) {
+    else if (hour >= 10 && hour <= 12 ) {
         bg = "sunris4.png"
     }
-    elseif (hour >= 12 && hour <= 14 ) {
+    else if (hour >= 12 && hour <= 14 ) {
         bg = "sunrise5.png"
     }
-    elseif (hour >= 14 && hour <= 16 ) {
+    else if (hour >= 14 && hour <= 16 ) {
         bg = "sunrise6.png"
     }
-    elseif (hour >= 16 && hour <= 18 ) {
+    else if (hour >= 16 && hour <= 18 ) {
         bg = "sunset7.png"
     }
-    elseif (hour >= 18 && hour <= 20 ) {
+    else if (hour >= 18 && hour <= 20 ) {
         bg = "sunset8.png"
     }
-    elseif (hour >= 20 && hour <= 23 ) {
+    else if (hour >= 20 && hour <= 23 ) {
         bg = "sunset9.png"
     }
-    elseif (hour >= 23 && hour === 0 ) {
+    else if (hour >= 23 && hour === 0 ) {
         bg = "sunset10.png"
     }
-    elseif (hour== 0 && hour <= 03 ) {
+    else if (hour== 0 && hour <= 03 ) {
         bg = "sunset11.png"
     } else {
         bg = "sunset12.png"
